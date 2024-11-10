@@ -1,0 +1,161 @@
+<html>
+<head>
+    <base href="https://mobilefps.game/">
+    <title>MobileFPS: Action-Packed Quick Sessions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ff4081;
+        }
+        .mode-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .mode-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .mode-card:hover {
+            transform: scale(1.05);
+        }
+        .mode-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .play-button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .play-button:hover {
+            background-color: #f50057;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>MobileFPS</h1>
+    <h2>Choose Your Battle</h2>
+    <div class="mode-grid">
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M17,17H7V7H17V17Z" />
+                <path fill="#ff4081" d="M7,7V17H17V7H7M9,9H15V15H9V9Z" />
+            </svg>
+            <h3>Team Deathmatch</h3>
+            <p>Fast respawns, high-energy battles</p>
+            <a href="https://www.gaming-style.com/RushTeam/index.php?page=Game"><button class="play-button pulse">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7Z" />
+            </svg>
+            <h3>Battle Royale</h3>
+            <p>Intense survival gameplay</p>
+            <a href="https://www.silvergames.com/en/brutal-battle-royale"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M14.4,6L14,4H5V21H7V14H12.6L13,16H20V6H14.4Z" />
+            </svg>
+            <h3>Capture the Flag</h3>
+            <p>Strategic, team-based objectives</p>
+            <a href="https://tagpro.koalabeast.com/game"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+            </svg>
+            <h3>Free-for-All</h3>
+            <p>Solo competition</p>
+            <a href="https://www.crazygames.com/game/hazmob-fps-online-shooter"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M7,2H17L13.5,9H17L10,22V14H7V2M9,4V12H12V14.66L14,11H10.24L13.76,4H9Z" />
+            </svg>
+            <h3>Gun Game</h3>
+            <p>Dynamic weapon progression</p>
+            <a href="https://poki.com/en/g/combat-reloaded"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+            </svg>
+            <h3>Hardpoint</h3>
+            <p>Control shifting objectives</p>
+            <a href="https://www.gameflare.com/online-game/hard-point/"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+            </svg>
+            <h3>Domination</h3>
+            <p>Capture and defend territories</p>
+            <a href="https://playhop.com/app/226294"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+            </svg>
+            <h3>Search and Destroy</h3>
+            <p>Tactical, no respawns</p>
+            <a href="https://www.silvergames.com/en/search-and-destroy"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M10,20V14H3V10H10V4L18,12L10,20Z" />
+            </svg>
+            <h3>Zombie Survival</h3>
+            <p>Endless waves of the undead</p>
+            <a href="https://www.silvergames.com/en/zombie-shooter"><button class="play-button">Play Now</button></a>
+        </div>
+        <div class="mode-card">
+            <svg class="mode-icon" viewBox="0 0 24 24">
+                <path fill="#ff4081" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+            </svg>
+            <h3>Sniper Duel</h3>
+            <p>Precision sniping battles</p>
+            <a href="https://www.silvergames.com/en/sniper-3-d"><button class="play-button">Play Now</button></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
